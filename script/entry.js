@@ -1,5 +1,6 @@
 // entry.js
-require("../style.css");
+require("../style/style.css");
+require("../style/test.scss");
 document.write('It works.');
 document.write(require('./module.js'));
 
