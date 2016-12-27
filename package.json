@@ -8,7 +8,8 @@
     "eslintTest": "eslint \"./script/**.js\" ",
     "webpackTest": "webpack ./script/entry.js bundle.js --module-bind \"css=style!css\" ",
     "webpackConfig": "webpack --config ./webpack.config.js ",
-    "sassTest": "node-sass ./style/test.scss ./style/test.css"
+    "sassTest": "node-sass ./style/test.scss ./style/test.css",
+    "mochaTest": "mocha ./script/add.test.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/SoullessL/NodeNpmTest#readme",
   "devDependencies": {
     "babel-eslint": "^7.1.1",
+    "chai": "^3.5.0",
     "css-loader": "^0.26.1",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
@@ -30,6 +32,8 @@
     "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.1",
     "gulp-uglify": "^2.0.0",
+    "mocha": "^3.2.0",
+    "mochawesome": "^1.5.4",
     "node-sass": "^4.1.1",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
